@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Quick and Dirty on Git and GitHub</title>
+</head>
+<body>
+  <!--AMAZON AD-->
+  <div class="alignleft">
+     <script>
+       	amzn_assoc_ad_type = "banner";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_placement = "assoc_banner_placement_default";
+	amzn_assoc_banner_type = "ez";
+	amzn_assoc_p = "13";
+	amzn_assoc_width = "468";
+	amzn_assoc_height = "60";
+	amzn_assoc_tracking_id = "cmjgrubb-20";
+	amzn_assoc_linkid = "864182df30ffc8762e09d0b4bfd51b83";
+     </script>
+     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
+     <br><span class="adComment">Ad</span>
+    </div>
+
+  <!--MASTHEAD-->
+  <h1>OPS TO DEV</h1>
+
+  <!--MENU-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Blog
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="b0001.html">Getting Started</a>
+        <a href="b0002.html">Pep Talk</a>
+        <a href="b0003.html">Small Potatoes</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Tutorial
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="t0001.html">Hosting a Static HTTPS Website on AWS</a>
+          <a href="t0002.html">The Quick and Dirty on Git and GitHub</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+  <!--BODY-->
+  <div id="post">
+    <h2 class="post">The Quick and Dirty on Git and GitHub</h2>
+    <p class="post">I should start this post off by saying that I am no GitHub wizard. I use GitHub to track changes for my own projects. I'm not worried about branching, cloning, or merging. This is really intended for beginners or as a quick reference for one-person projects.</p>
+    <h3 class="post">The GitHub Part</h3>
+    <p class="post">Setting up a GitHub account is pretty easy and straightforward, and it doesn't bear me getting into other than to say that the free tier will work for most people. Once you've created your project, you'll want to create a repository. Generally speaking, each repository will correlate with a project.</p>
+    <p class="post">To create a new repository, click the plus sign in the top right corner of the page and select "New repository" from the dropdown. Name your repository, add a description if you like, select whether you want your repository to be public or private, and check the box next to "Initialize this repository with a README."</p>
+    <h3 class="post">Installing Git</h3>
+    <p class="post">Installing Git is super easy. In Linux, it's "sudo apt install git-all" or "sudo dnf install git-all," depending on your distribution. In MacOS, run "git --version" from the terminal, and it will prompt you to install if it isn't already. On Windows, an installer is available at <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.</p>
+    <h3 class="post">Setting Up Git</h3>
+    <p class="post">There are a couple of quick commands you need to run to configure Git once it's installed:</p>
+    <p class="console">git config --global user.name "<i>username</i>"</p>
+    <p class="console">git config --global user.email "<i>E-mail address</i>"</p>
+    <h3 class="post">Creating a Local Copy of Your Repository</h3>
+    <p class="post">I have a directory in my home folder called "GitHub" where I keep a local copy of all my repositories, but you can put this wherever you like. Just note that copying &ndash; or cloning, in Git parlance &ndash; creates its own directory, so you don't need to worry about making a directory for each individual repository. The Git command is:</p>
+    <p class="console">git clone https://github.com/<i>username</i>/<i>repository_name</i></p>
+    <h3 class="post">Committing Your Changes to GitHub</h3>
+    <p class="post">Once you have a local repository and you've created your files within your local repository directory, you need to tell Git that you want these files added to Git's tracking:</p>
+    <p class="console">git add file.txt</p>
+    <p class="post">You only have to do this once per file. Once you tell Git you want it to keep track of file.txt, it will upload any changes to that file after the next two commands are run. The first of those commands is making the commit. The -m option is the message you'll want to add about what changes you made. Please note that the -m is a required option, and it's hightly recommended you take the time to create a meaningful commit message.</p>
+    <p class="console">git commit -m "Initial commit"</p>
+    <p class="post">Finally, we pull the trigger:</p>
+    <p class="console">git push origin master</p>
+    <h3 class="post">The Next Time You Use Git</h3>
+    <p class="post">Now that everything is set up, using Git in future revolves around using three commands:</p>
+    <p class="console">git add newfile.txt</p>
+    <p class="console">git commit -m "Added newfile.txt"</p>
+    <p class="console">git push origin master</p>
+    <p class="post">Finally, there's a cool command to give you some insight into what is going on with Git:</p>
+    <p class="console">git status</p>
+  </div>
+  <p style="text-align:center; padding-bottom:25px"><a href="index.html">HOME</a><!--<a href="t0002.html">&#8594;</a>--></p>
+
+  <!--FOOTER-->
+  <div id="footer">
+    <table style="width:100%">
+      <tr>
+        <td style="width:50%">Follow me on Twitter at <a href="https://twitter.com/cmjgrubb">@CmjGrubb</a>.</td>
+        <td style="text-align:right; width:50%">As an Amazon Associate I earn from qualifying purchases.</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
