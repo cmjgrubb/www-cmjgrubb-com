@@ -1,8 +1,16 @@
+@font-face
+{
+    font-family: 'odibee_sansregular';
+    src: url('odibeesans-regular-webfont.woff2') format('woff2'),
+         url('odibeesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1
 {
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
-  /*font-style: italic;*/
+  color: #b1091d;
+  font-family: 'odibee_sansregular', Arial, Helvetica, sans-serif;
   font-size: 56px;
   padding-top: 50px;
   padding-right: 50px;
@@ -11,84 +19,18 @@ h1
 
 body
 {
-  /*background-image: url(bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;*/
   background-color: white;
 }
 
-a:link
+article
 {
-  color:red;
-  text-decoration: none;
-}
-
-a:visited
-{
-  color:red;
-  text-decoration: none;
-}
-
-a:hover
-{
-  color:black;
-}
-
-a:active
-{
-  color:white;
-}
-
-#post
-{
-  /*background-color: rgba(0, 0, 0, 0.8);
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;*/
   padding-top: 25px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
 }
 
-h2.post
-{
-  color: red;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 32px;
-  line-height: 3;
-}
-
-h3.post
-{
-  color: red;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 24px;
-  line-height: 3;
-}
-
-p.post
-{
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 1.1px;
-  line-height: 2;
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px
-}
-
-span.adComment
-{
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 1.1px;
-  font-size: 14px;
-  line-height: 1;
-}
-
-#footer
+footer
 {
   color: white;
   background-color: black;
@@ -102,14 +44,97 @@ span.adComment
   padding-left: 50px;
 }
 
-.topnav {
+.bottomnav
+{
+  text-align:center;
+  padding-bottom:25px;
+}
+
+a:link
+{
+  color:#b1091d;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color:#b1091d;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color:black;
+}
+
+a:active
+{
+  color:white;
+}
+
+h2.post
+{
+  color: #b1091d;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  line-height: 3;
+}
+
+h3.post
+{
+  color: #b1091d;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  line-height: 3;
+}
+
+p.post
+{
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p.console
+{
+  color: green;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+ul.console
+{
+  color: green;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.topnav
+{
 overflow: hidden;
 background-color: black;
 font-family: "Courier New", Courier, monospace;
 padding-left: 50px;
 }
 
-.topnav a {
+.topnav a
+{
 float: left;
 display: block;
 color: white;
@@ -119,21 +144,25 @@ text-decoration: none;
 font-size: 17px;
 }
 
-.active {
-  background-color: red;
+.active
+{
+  background-color: #b1091d;
   color: white;
 }
 
-.topnav .icon {
+.topnav .icon
+{
 display: none;
 }
 
-.dropdown {
+.dropdown
+{
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn
+{
   font-size: 16px;
   border: none;
   outline: none;
@@ -144,7 +173,8 @@ display: none;
   margin: 0;
 }
 
-.dropdown-content {
+.dropdown-content
+{
   display: none;
   position: absolute;
   background-color: black;
@@ -153,7 +183,8 @@ display: none;
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a
+{
   float: none;
   color: white;
   padding: 12px 16px;
@@ -162,16 +193,19 @@ display: none;
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn
+{
   background-color: black;
   color: white;
 }
 
-.dropdown-content a:hover {
-  background-color: red;
+.dropdown-content a:hover
+{
+  background-color: #b1091d;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content
+{
   display: block;
 }
 
