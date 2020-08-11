@@ -19,6 +19,7 @@ h1
 
 body
 {
+  color: black;
   background-color: white;
 }
 
@@ -90,7 +91,6 @@ h3.post
 
 p.post
 {
-  color: black;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 1.1px;
   line-height: 2;
@@ -123,6 +123,16 @@ ul.console
   padding-top: 10px;
   padding-bottom: 10px;
 
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
 }
 
 .topnav
@@ -238,4 +248,43 @@ display: none;
     width: 100%;
     text-align: left;
   }
+}
+
+#dark-mode-button {
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  background-color: black;
+   border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#light-mode-button {
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  background-color: white;
+   border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#dark-mode-button:hover {
+  background-color: #b1091d;
+}
+
+#light-mode-button:hover {
+  background-color: #b1091d;
+  color: white;
 }
