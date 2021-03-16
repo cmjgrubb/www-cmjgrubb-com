@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>CMJ</title>
+</head>
+<body>
+  <!-- <button id="dark-mode-button" onclick="darkMode()">Dark Mode</button> -->
+  <!-- <button id="light-mode-button" onclick="lightMode()">Light Mode</button> -->
+
+  <!--MASTHEAD-->
+  <h1>CMJ</h1>
+
+  <!--MENU-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Blog
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="b0001.html">Getting Started</a>
+        <a href="b0002.html">Pep Talk</a>
+        <a href="b0003.html">Small Potatoes</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Tutorial
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="t0001.html">Hosting a Static HTTPS Website on AWS</a>
+          <a href="t0002.html">The Quick and Dirty on Git and GitHub</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+  <button id="homeBtn">Home</button>
+  <button id="b0001Btn">Getting Started</button>
+  <!--BODY-->
+  <article id="articleId">
+    
+
+  </article>
+
+  <script>
+    document.getElementById("homeBtn").addEventListener("click", showHome);
+    document.getElementById("b0001Btn").addEventListener("click", showb0001);
+
+    function showHome() {
+      document.getElementById("articleId").innerHTML = 
+      '<h2 class="post">Who Is This Guy?</h2><p class="post">Craig has been an IT professional for eight years, mostly as a systems administrator. He has had the pleasure of working with some very smart men and women and has done his best to soak up as much as he can. He is lucky enough to be in a leadership position with an organization that understands the importance of technology in trying to achieve its goals.</p><p class="post">Outside of technology, Craig enjoys playing guitar, hiking, and most importantly, spending time with his wife and son.</p><p class="post">This website is his springboard into the next adventure of becoming a developer.</p>'
+    }
+
+    function showb0001() {
+      document.getElementById("articleId").innerHTML =
+      '<h2 class="post">Getting Started</h2><p class="post">I\'ve been in information technologies for eight years now. I love it! It has given me a lot of opportunties, and I\'ve had the pleasure of working with some amazing people along the way. Great people have given me cool opportunties.</p><p class="post">While I appreciate all the opportunties I\'ve had, my career has happened without much direction on my part. That\'s really due to not knowing what I wanted to do in IT.</p><p class="post">I have finally figured it out, though. I want to be a developer. To become a developer, though, I need projects. So I figured I\'d start a blog about my journey from operations to development.</p><p class="post">This website is my learning platform, and I look forward to sharing my journey with you. I\'ll share my thoughts, struggles, and dreams, and maybe we\'ll find some things we have in common. I hope you enjoy.</p><p class="post">Keep coding and God bless!</p>'
+    }
+  </script>
+
+  <!--FOOTER-->
+  <footer>
+    Follow me on Twitter at <a href="https://twitter.com/cmjgrubb">@CmjGrubb</a>.
+  </footer>
+  <script src="scripts/darkMode.js">getMode()</script>
+</body>
+</html>
