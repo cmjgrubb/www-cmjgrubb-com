@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="domtest.css">
   <title>CMJ</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <button id="homeBtn">Home</button>
+  <!--<button id="homeBtn">Home</button>-->
   <button id="b0001Btn">Getting Started</button>
   <!--BODY-->
   <article id="articleId">
@@ -47,13 +47,11 @@
     document.getElementById("b0001Btn").addEventListener("click", showb0001);
 
     function showHome() {
-      document.getElementById("articleId").innerHTML = 
-      '<h2 class="post">Who Is This Guy?</h2><p class="post">Craig has been an IT professional for eight years, mostly as a systems administrator. He has had the pleasure of working with some very smart men and women and has done his best to soak up as much as he can. He is lucky enough to be in a leadership position with an organization that understands the importance of technology in trying to achieve its goals.</p><p class="post">Outside of technology, Craig enjoys playing guitar, hiking, and most importantly, spending time with his wife and son.</p><p class="post">This website is his springboard into the next adventure of becoming a developer.</p>'
+      document.getElementById("articleId").innerHTML = '<h2 class="post">Who Is This Guy?</h2><p class="post">Craig has been an IT professional for eight years, mostly as a systems administrator. He has had the pleasure of working with some very smart men and women and has done his best to soak up as much as he can. He is lucky enough to be in a leadership position with an organization that understands the importance of technology in trying to achieve its goals.</p><p class="post">Outside of technology, Craig enjoys playing guitar, hiking, and most importantly, spending time with his wife and son.</p><p class="post">This website is his springboard into the next adventure of becoming a developer.</p>';
     }
 
     function showb0001() {
-      document.getElementById("articleId").innerHTML =
-      '<h2 class="post">Getting Started</h2><p class="post">I\'ve been in information technologies for eight years now. I love it! It has given me a lot of opportunties, and I\'ve had the pleasure of working with some amazing people along the way. Great people have given me cool opportunties.</p><p class="post">While I appreciate all the opportunties I\'ve had, my career has happened without much direction on my part. That\'s really due to not knowing what I wanted to do in IT.</p><p class="post">I have finally figured it out, though. I want to be a developer. To become a developer, though, I need projects. So I figured I\'d start a blog about my journey from operations to development.</p><p class="post">This website is my learning platform, and I look forward to sharing my journey with you. I\'ll share my thoughts, struggles, and dreams, and maybe we\'ll find some things we have in common. I hope you enjoy.</p><p class="post">Keep coding and God bless!</p>'
+      document.getElementById("articleId").innerHTML = '<h2 class="post">Getting Started</h2><p class="post">I\'ve been in information technologies for eight years now. I love it! It has given me a lot of opportunties, and I\'ve had the pleasure of working with some amazing people along the way. Great people have given me cool opportunties.</p><p class="post">While I appreciate all the opportunties I\'ve had, my career has happened without much direction on my part. That\'s really due to not knowing what I wanted to do in IT.</p><p class="post">I have finally figured it out, though. I want to be a developer. To become a developer, though, I need projects. So I figured I\'d start a blog about my journey from operations to development.</p><p class="post">This website is my learning platform, and I look forward to sharing my journey with you. I\'ll share my thoughts, struggles, and dreams, and maybe we\'ll find some things we have in common. I hope you enjoy.</p><p class="post">Keep coding and God bless!</p>';
     }
   </script>
 
