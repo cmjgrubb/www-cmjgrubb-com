@@ -10,11 +10,16 @@
   <!-- <button id="light-mode-button" onclick="lightMode()">Light Mode</button> -->
   <div class="header">
   <!--MENU-->
-  <svg class="hamburger" viewBox="0 0 100 80" width="40" height="40">
+  <svg class="hamburger" id="menu" viewBox="0 0 100 80" width="40" height="40">
     <rect width="100" height="15"></rect>
     <rect y="30" width="100" height="15"></rect>
     <rect y="60" width="100" height="15"></rect>
   </svg>
+
+  <div class="dropdown-menu" id="menuDropdown">
+    <button id="homeBtn">Home</button>
+    <button id="b0001Btn">Getting Started</button>
+  </div>
 
   <!--MASTHEAD-->
   <h1>CMJ</h1>
@@ -53,6 +58,7 @@
   </article>
 
   <script>
+    document.getElementById("menu").addEventListener("click", showMenu);
     document.getElementById("homeBtn").addEventListener("click", showHome);
     document.getElementById("b0001Btn").addEventListener("click", showb0001);
 
@@ -62,6 +68,10 @@
 
     function showb0001() {
       document.getElementById("articleId").innerHTML = '<h2 class="post">Getting Started</h2><p class="post">I\'ve been in information technologies for eight years now. I love it! It has given me a lot of opportunties, and I\'ve had the pleasure of working with some amazing people along the way. Great people have given me cool opportunties.</p><p class="post">While I appreciate all the opportunties I\'ve had, my career has happened without much direction on my part. That\'s really due to not knowing what I wanted to do in IT.</p><p class="post">I have finally figured it out, though. I want to be a developer. To become a developer, though, I need projects. So I figured I\'d start a blog about my journey from operations to development.</p><p class="post">This website is my learning platform, and I look forward to sharing my journey with you. I\'ll share my thoughts, struggles, and dreams, and maybe we\'ll find some things we have in common. I hope you enjoy.</p><p class="post">Keep coding and God bless!</p>';
+    }
+
+    function showMenu() {
+      document.getElementById("menuDropdown").classList.toggle("show");
     }
   </script>
 

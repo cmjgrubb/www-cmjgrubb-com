@@ -51,6 +51,11 @@ button
   outline: none;
 }
 
+.dropdown-menu
+{
+  display: none;
+}
+
 .hamburger
 {
   fill: white;
