@@ -54,6 +54,8 @@ button
 .dropdown-menu
 {
   display: none;
+  color: white;
+  background-color: #b1091d;
 }
 
 .hamburger
