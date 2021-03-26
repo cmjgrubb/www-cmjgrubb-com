@@ -81,6 +81,11 @@ button
   padding-left: 20px;
 }
 
+.show
+{
+  display: block;
+}
+
 a:link
 {
   color:#b1091d;
