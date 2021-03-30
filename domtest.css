@@ -51,6 +51,12 @@ button
   outline: none;
 }
 
+.dropdown
+{
+  float: right;
+  position: relative;
+}
+
 .dropdown-menu
 {
   display: none;
@@ -61,7 +67,6 @@ button
 .hamburger
 {
   fill: white;
-  float: right;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -160,57 +165,8 @@ ul.console
 
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
 .active
 {
-  background-color: #b1091d;
-  color: white;
-}
-
-#dark-mode-button {
-  float: right;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
-  background-color: black;
-   border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-#light-mode-button {
-  float: right;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
-  background-color: white;
-   border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-#dark-mode-button:hover {
-  background-color: #b1091d;
-}
-
-#light-mode-button:hover {
   background-color: #b1091d;
   color: white;
 }
