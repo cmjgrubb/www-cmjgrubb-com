@@ -9,18 +9,16 @@
 
 h1
 {
-  color: #b1091d;
+  color: #1DB700;
   font-family: 'odibee_sansregular', Arial, Helvetica, sans-serif;
   font-size: 56px;
-  padding-top: 20px;
-  padding-right: 20px;
   padding-left: 20px;
 }
 
 body
 {
-  color: black;
-  background-color: white;
+  color: #1c4670;
+  background-color: #eaeae0;
 }
 
 article
@@ -33,8 +31,9 @@ article
 
 footer
 {
-  color: white;
-  background-color: black;
+  color: #eaeae0;
+  background-color: #1c4670;
+  background-image: linear-gradient(to right, #1c4670, #278ab0);
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 1.1px;
   line-height: 1.6;
@@ -51,39 +50,31 @@ button
   outline: none;
 }
 
-.dropdown
-{
-  float: right;
-  position: relative;
-}
-
 .dropdown-menu
 {
   display: none;
-  color: white;
-  background-color: #b1091d;
+  color: #eaeae0;
+  background-color: #1DB700;
 }
 
 .hamburger
 {
-  fill: white;
-  padding-top: 20px;
+  fill: #eaeae0;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
-}
-
-.masthead
-{
-  float: right;
 }
 
 .header
 {
-  background-color: black;
+  background-color: #1c4670;
+  background-image: linear-gradient(to right, #1c4670, #278ab0);
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .show
@@ -93,13 +84,13 @@ button
 
 a:link
 {
-  color:#b1091d;
+  color:#1DB700;
   text-decoration: none;
 }
 
 a:visited
 {
-  color:#b1091d;
+  color:#1DB700;
   text-decoration: none;
 }
 
@@ -110,12 +101,12 @@ a:hover
 
 a:active
 {
-  color:white;
+  color:#eaeae0;
 }
 
 h2.post
 {
-  color: #b1091d;
+  color: #1c4670;
   font-family: "Courier New", Courier, monospace;
   font-size: 32px;
   line-height: 3;
@@ -123,7 +114,7 @@ h2.post
 
 h3.post
 {
-  color: #b1091d;
+  color: #278ab0;
   font-family: "Courier New", Courier, monospace;
   font-size: 24px;
   line-height: 3;
@@ -167,6 +158,6 @@ ul.console
 
 .active
 {
-  background-color: #b1091d;
-  color: white;
+  background-color: #1DB700;
+  color: #eaeae0;
 }
