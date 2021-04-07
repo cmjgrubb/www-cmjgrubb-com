@@ -1,3 +1,4 @@
+
 @font-face
 {
     font-family: 'odibee_sansregular';
@@ -13,6 +14,22 @@ h1
   font-family: 'odibee_sansregular', Arial, Helvetica, sans-serif;
   font-size: 56px;
   padding-left: 20px;
+}
+
+h2
+{
+  color: #1c4670;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  line-height: 3;
+}
+
+h3
+{
+  color: #278ab0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  line-height: 3;
 }
 
 body
@@ -50,17 +67,31 @@ button
   outline: none;
 }
 
+.dropdown
+{
+  float: right;
+  position: relative;
+}
+
 .dropdown-menu
 {
   display: none;
+  position: absolute;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: right;
   color: #eaeae0;
   background-color: #1DB700;
+  min-width: 200px;
+  right: 0;
+  z-index: 1;
 }
 
 .hamburger
 {
   fill: #eaeae0;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -69,9 +100,7 @@ button
 {
   background-color: #1c4670;
   background-image: linear-gradient(to right, #1c4670, #278ab0);
-  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 10px;
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
@@ -96,28 +125,12 @@ a:visited
 
 a:hover
 {
-  color:black;
+  color: #278ab0;
 }
 
 a:active
 {
   color:#eaeae0;
-}
-
-h2.post
-{
-  color: #1c4670;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 32px;
-  line-height: 3;
-}
-
-h3.post
-{
-  color: #278ab0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 24px;
-  line-height: 3;
 }
 
 p.post
