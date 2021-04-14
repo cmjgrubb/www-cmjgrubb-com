@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="domtest.css">
   <title>CMJ</title>
 </head>
+
 <body>
   <div class="header">
-  <!--MENU-->
-  <div><h1>CMJ</h1></div>
-  <div class="dropdown">
-    <svg class="hamburger" id="menu-icon" viewBox="0 0 100 80" width="40" height="40">
-      <rect width="100" height="15"></rect>
-      <rect y="30" width="100" height="15"></rect>
-      <rect y="60" width="100" height="15"></rect>
-    </svg>
+    <!--MENU-->
+    <div>
+      <h1>CMJ</h1>
+    </div>
+    <div class="dropdown">
+      <svg class="hamburger" id="menu-icon" viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="15"></rect>
+        <rect y="30" width="100" height="15"></rect>
+        <rect y="60" width="100" height="15"></rect>
+      </svg>
 
-    <div id="menuDropdown" class="dropdown-menu">
-      <div id="homeBtn">Home<br /></div>
-      <div id="b0001Btn">Getting Started<br /></div>
+      <div id="menuDropdown" class="dropdown-menu">
+        <div id="homeBtn">Home<br /></div>
+        <div id="b0001Btn">Getting Started<br /></div>
+      </div>
     </div>
   </div>
-</div>
 
   <!--BODY-->
   <article id="articleId">
     <h2 class="post">Who Is This Guy?</h2>
-    <p class="post">Craig has been an IT professional for eight years, mostly as a systems administrator. He has had the pleasure of working with some very smart men and women and has done his best to soak up as much as he can. He is lucky enough to be in a leadership position with an organization that understands the importance of technology in trying to achieve its goals.</p>
-    <p class="post">Outside of technology, Craig enjoys playing guitar, hiking, and most importantly, spending time with his wife and son.</p>
+    <p class="post">Craig has been an IT professional for eight years, mostly as a systems administrator. He has had the
+      pleasure of working with some very smart men and women and has done his best to soak up as much as he can. He is
+      lucky enough to be in a leadership position with an organization that understands the importance of technology in
+      trying to achieve its goals.</p>
+    <p class="post">Outside of technology, Craig enjoys playing guitar, hiking, and most importantly, spending time with
+      his wife and son.</p>
     <p class="post">This website is his springboard into the next adventure of becoming a developer.</p>
 
   </article>
@@ -48,6 +56,20 @@
     function showMenu() {
       document.getElementById("menuDropdown").classList.toggle("show");
     }
+
+    // Closes menu when clicking anywhere on the screen
+    window.onclick = function (event) {
+      if (!event.target.matches('.hamburger')) {
+        var dropdowns = document.getElementsByClassName("dropdown-menu");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
   </script>
 
   <!--FOOTER-->
@@ -55,4 +77,5 @@
     Follow me on Twitter at <a href="https://twitter.com/cmjgrubb">@CmjGrubb</a>.
   </footer>
 </body>
+
 </html>
