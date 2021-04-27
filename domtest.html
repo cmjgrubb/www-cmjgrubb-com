@@ -61,6 +61,18 @@
       xmlhttp.send();
     }
 
+    function showb0002() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var jsonArt = JSON.parse(this.responseText);
+          document.getElementById("articleId").innerHTML = jsonArt.articleContent;
+        }
+      };
+      xmlhttp.open("GET", "b0002.json", true);
+      xmlhttp.send();
+    }
+
     function showMenu() {
       document.getElementById("menuDropdown").classList.toggle("show");
     }
