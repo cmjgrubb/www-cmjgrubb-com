@@ -175,3 +175,8 @@ ul.console
   background-color: #1DB700;
   color: #eaeae0;
 }
+
+#menu-icon
+{
+  cursor: pointer;
+}
