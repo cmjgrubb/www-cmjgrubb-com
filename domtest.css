@@ -78,13 +78,13 @@ button
   display: none;
   position: absolute;
   padding: 5px;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
   text-align: right;
   color: #eaeae0;
   background-color: #1DB700;
-  min-width: 300px;
+  min-width: 400px;
   right: 0;
   z-index: 1;
 }
