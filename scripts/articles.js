@@ -37,7 +37,7 @@ function showb0002() {
 }
 
 function showb0003() {
-    varxmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var jsonArt = JSON.parse(this.responseText);
@@ -49,7 +49,7 @@ function showb0003() {
 }
 
 function showt0001() {
-    varxmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var jsonArt = JSON.parse(this.responseText);
@@ -61,7 +61,7 @@ function showt0001() {
 }
 
 function showt0002() {
-    varxmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var jsonArt = JSON.parse(this.responseText);
