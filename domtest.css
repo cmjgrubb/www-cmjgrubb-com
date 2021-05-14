@@ -77,7 +77,6 @@ button
 {
   display: none;
   position: absolute;
-  padding: 15px;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2;
@@ -88,6 +87,11 @@ button
   right: 0;
   z-index: 1;
   cursor: pointer;
+}
+
+.menu-item
+{
+  padding: 15px;
 }
 
 .hamburger
