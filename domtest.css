@@ -77,14 +77,14 @@ button
 {
   display: none;
   position: absolute;
-  padding: 5px;
+  padding: 15px;
   font-size: 24px;
   font-family: 'odibee_sansregular', Arial, Helvetica, sans-serif;
   line-height: 2;
   text-align: right;
   color: #eaeae0;
   background-color: #1DB700;
-  min-width: 500px;
+  min-width: 450px;
   right: 0;
   z-index: 1;
   cursor: pointer;
