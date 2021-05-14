@@ -177,6 +177,12 @@ ul.console
   color: #eaeae0;
 }
 
+.menu-item:hover
+{
+  color: #1DB700;
+  background-color: #eaeae0;
+}
+
 #menu-icon
 {
   cursor: pointer;
