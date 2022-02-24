@@ -1,5 +1,5 @@
 {
-  "Tutorials": [
+  "tutorials": [
     {
       "articleTitle": "Hosting a Static HTTPS Website on AWS",
       "shortTitle": "hosting_a_static_https_website_on_aws",

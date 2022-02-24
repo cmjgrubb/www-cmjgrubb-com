@@ -7,12 +7,12 @@ const util = require('util');
 const readFile = util.promisify(fs.readFile);
 
 /**
- * Logic for fetching speakers information
+ * Logic for fetching blog information
  */
 class BlogService {
   /**
    * Constructor
-   * @param {*} datafile Path to a JSOn file that contains the speakers data
+   * @param {*} datafile Path to a JSOn file that contains the blog data
    */
   constructor(datafile) {
     this.datafile = datafile;
@@ -25,7 +25,9 @@ class BlogService {
     const data = await this.getData();
 
     // We are using map() to transform the array we get into another one
-    return data.map((blog) => ({ title: blog.articleTitle, shortTitle: blog.shortTitle }));
+    return data.map((blog) => {
+      return { articleTitle: blog.articleTitle, shortTitle: blog.shortTitle };
+    });
   }
 
   /**
@@ -37,9 +39,9 @@ class BlogService {
     const blog = data.find((elm) => elm.shortTitle === shortTitle);
     if (!blog) return null;
     return {
-      title: blog.articleTitle,
+      articleTitle: blog.articleTitle,
       shortTitle: blog.shortTitle,
-      article: blog.articleContent,
+      articleContent: blog.articleContent,
     };
   }
 
@@ -49,9 +51,9 @@ class BlogService {
   async getListShort() {
     const data = await this.getData();
     return data.map((blog) => ({
-      title: blog.articleTitle,
+      articleTitle: blog.articleTitle,
       shortTitle: blog.shortTitle,
-      article: blog.articleContent,
+      articleContent: blog.articleContent,
     }));
   }
 
@@ -61,9 +63,9 @@ class BlogService {
   async getList() {
     const data = await this.getData();
     return data.map((blog) => ({
-      title: blog.articleTitle,
+      articleTitle: blog.articleTitle,
       shortTitle: blog.shortTitle,
-      article: blog.articleContent,
+      articleContent: blog.articleContent,
     }));
   }
 
