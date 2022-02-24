@@ -1,23 +1,17 @@
 const express = require('express');
 
-const gettingstartedRoute = require('./gettingstarted');
-const peptalkRoute = require('./peptalk');
-const smallpotatoesRoute = require('./smallpotatoes');
-const awsRoute = require('./aws');
-const gitRoute = require('./git');
+const blogsRoute = require('./blogs');
+const tutorialsRoute = require('./tutorials');
 
 const router = express.Router();
 
-module.exports = () => {
+module.exports = (params) => {
   router.get('/', (request, response) => {
     response.render('pages/index', { pageTitle: 'CMJ' });
   });
 
-  router.use('/gettingstarted', gettingstartedRoute());
-  router.use('/peptalk', peptalkRoute());
-  router.use('/smallpotatoes', smallpotatoesRoute());
-  router.use('/aws', awsRoute());
-  router.use('/git', gitRoute());
+  router.use('/blogs', blogsRoute(params));
+  router.use('/tutorials', tutorialsRoute(params));
 
   return router;
 };
