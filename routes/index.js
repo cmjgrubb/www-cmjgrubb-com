@@ -7,7 +7,7 @@ const router = express.Router();
 
 module.exports = (params) => {
   router.get('/', (request, response) => {
-    response.render('pages/index', { pageTitle: 'CMJ' });
+    response.render('layout', { pageTitle: 'CMJ', template: 'index' });
   });
 
   router.use('/blogs', blogsRoute(params));
