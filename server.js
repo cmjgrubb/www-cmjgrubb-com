@@ -17,6 +17,16 @@ app.set('views', path.join(__dirname, './views'));
 
 app.use(express.static(path.join(__dirname, './static')));
 
+app.use(async (request, response, next) => {
+  try {
+    const titles = await blogService.getTitle();
+    response.locals.blogTitle = titles;
+    return next();
+  } catch (err) {
+    return next(err);
+  }
+});
+
 app.use(
   '/',
   routes({

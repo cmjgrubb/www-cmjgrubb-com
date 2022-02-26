@@ -5,8 +5,15 @@
   </div>
   <nav class="dropdown">
     <a href="/">Home</a>
-    <a href="/blogs">Blogs</a>
-    <a href="/tutorials">Tutorials</a>
+    <div id="menuDropdown" class="dropdown-menu">
+      <a href="/blogs">Blogs</a>
+      <% blogTitles.forEach(function (blog) { %>
+        <div class="menu-item"><a href="/blogs/<% blog.shortTitle %>> <% blog.articleTitle %></a><br /></div>
+        <% }) %> 
+    </div>
+    <div id="menuDropdown" class="dropdown-menu">
+      <a href="/tutorials">Tutorials</a>
+    </div>
     <!-- <svg class="hamburger" id="menu-icon" viewBox="0 0 100 80" width="40" height="40">
       <rect width="100" height="15"></rect>
       <rect y="30" width="100" height="15"></rect>
