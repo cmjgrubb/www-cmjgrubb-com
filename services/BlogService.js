@@ -25,9 +25,7 @@ class BlogService {
     const data = await this.getData();
 
     // We are using map() to transform the array we get into another one
-    return data.map((blog) => {
-      return { articleTitle: blog.articleTitle, shortTitle: blog.shortTitle };
-    });
+    return data.map((blog) => ({ articleTitle: blog.articleTitle, shortTitle: blog.shortTitle }));
   }
 
   /**

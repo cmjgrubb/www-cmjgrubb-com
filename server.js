@@ -27,6 +27,16 @@ app.use(async (request, response, next) => {
   }
 });
 
+app.use(async (request, response, next) => {
+  try {
+    const titles = await tutorialService.getTitle();
+    response.locals.tutorialTitle = titles;
+    return next();
+  } catch (err) {
+    return next(err);
+  }
+});
+
 app.use(
   '/',
   routes({
