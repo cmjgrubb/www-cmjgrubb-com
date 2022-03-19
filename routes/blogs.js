@@ -10,9 +10,7 @@ module.exports = (params) => {
     return response.json(blogs);
   });
 
-  router.get('/:shortTitle', (request, response) => {
-    return response.send(`Detail page of ${request.params.shortTitle}`);
-  });
+  router.get('/:shortTitle', (request, response) => response.send(`Detail page of ${request.params.shortTitle}`));
 
   return router;
 };

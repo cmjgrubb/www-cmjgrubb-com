@@ -16,31 +16,5 @@
       <div class="menu-item"><a href="/blogs/<%= blog.shortTitle %>"> <%= blog.articleTitle %></a></div>
       <% }) %>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">
-        Tutorials
-        <i class="fa fa-caret-down"></i>
-      </button>
-    </div>
-      <div class="dropdown-content">
-        <% tutorialTitle.forEach(function (tutorial) { %>
-        <div class="menu-item"><a href="/tutorials/<%= tutorial.shortTitle %>"> <%= tutorial.articleTitle %></a></div>
-        <% }) %>
-      </div>
-    </div>
-    <!-- <svg class="hamburger" id="menu-icon" viewBox="0 0 100 80" width="40" height="40">
-      <rect width="100" height="15"></rect>
-      <rect y="30" width="100" height="15"></rect>
-      <rect y="60" width="100" height="15"></rect>
-    </svg>
-
-    <div id="menuDropdown" class="dropdown-menu">
-      <div class="menu-item" id="homeBtn">Home<br /></div>
-      <div class="menu-item" id="b0001Btn">Getting Started<br /></div>
-      <div class="menu-item" id="b0002Btn">Pep Talk<br /></div>
-      <div class="menu-item" id="b0003Btn">Small Potatoes<br /></div>
-      <div class="menu-item" id="t0001Btn">Hosting a Static HTTPS Website on AWS<br /></div>
-      <div class="menu-item" id="t0002Btn">The Quick and Dirty on Git and GitHub<br /></div>
-    </div> -->
   </nav>
 </div>

@@ -3,10 +3,8 @@ const path = require('path');
 const routes = require('./routes');
 
 const BlogService = require('./services/BlogService');
-const TutorialService = require('./services/TutorialService');
 
 const blogService = new BlogService('./data/blogs.json');
-const tutorialService = new TutorialService('./data/tutorials.json');
 
 const app = express();
 const port = 3000;
@@ -27,21 +25,10 @@ app.use(async (request, response, next) => {
   }
 });
 
-app.use(async (request, response, next) => {
-  try {
-    const titles = await tutorialService.getTitle();
-    response.locals.tutorialTitle = titles;
-    return next();
-  } catch (err) {
-    return next(err);
-  }
-});
-
 app.use(
   '/',
   routes({
     blogService,
-    tutorialService,
   })
 );
 
