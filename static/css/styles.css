@@ -8,22 +8,22 @@ h1 {
 }
 
 h2 {
-  color: #1c4670;
-  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   line-height: 3;
 }
 
 h3 {
   color: #278ab0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 3;
 }
 
 body {
-  color: #1c4670;
-  background-color: #eaeae0;
+  color: #333;
+  background-color: #eee;
 }
 
 article {
@@ -34,10 +34,9 @@ article {
 }
 
 footer {
-  color: #eaeae0;
-  background-color: #1c4670;
-  background-image: linear-gradient(to right, #1c4670, #278ab0);
-  font-family: 'Courier New', Courier, monospace;
+  color: #eee;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1.1px;
   line-height: 1.6;
   font-size: 18px;
@@ -47,44 +46,75 @@ footer {
   padding-left: 50px;
 }
 
-button {
-  border: none;
-  outline: none;
+footer a:hover {
+  color: #eee;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .dropdown {
-  float: right;
+  float: left;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #eee;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #1db700;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: right;
-  color: #eaeae0;
-  background-color: #1db700;
+  background-color: #333;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  cursor: pointer;
-  /* padding: 14px 16px; */
+}
+
+.dropdown-content a {
+  float: none;
+  color: #eee;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #1db700;
+  color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .header {
-  background-color: #1c4670;
-  background-image: linear-gradient(to right, #1c4670, #278ab0);
-  /* padding-right: 20px;
-  padding-left: 20px;
-  display: flex;
-  justify-content: space-between; */
+  background-color: #333;
   overflow: hidden;
 }
 
@@ -107,12 +137,11 @@ a:hover {
 }
 
 a:active {
-  color: #eaeae0;
+  color: #eee;
 }
 
 p.post {
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 1.1px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 2;
   font-size: 18px;
   padding-top: 10px;
@@ -144,12 +173,12 @@ ul.console {
 
 /* .active {
   background-color: #1db700;
-  color: #eaeae0;
+  color: #eee;
 } */
 
 .dropdown-content:hover {
   color: #1db700;
-  background-color: #eaeae0;
+  background-color: #333;
 }
 
 .dropdown:hover .dropdown-content {
