@@ -12,7 +12,7 @@ module.exports = (params) => {
 
   router.get('/:shortTitle', async (request, response) => {
     const blogs = await blogService.getBlog(request.params.shortTitle);
-    response.render('layout', { pageTitle: 'ArticleTitle', template: 'blogs', blogs });
+    response.render('layout', { pageTitle: blogs.articleTitle, template: 'blogs', blogs });
   });
 
   return router;
