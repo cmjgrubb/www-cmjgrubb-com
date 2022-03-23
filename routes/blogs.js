@@ -10,7 +10,10 @@ module.exports = (params) => {
     return response.json(blogs);
   });
 
-  router.get('/:shortTitle', (request, response) => response.send(`Detail page of ${request.params.shortTitle}`));
+  router.get('/:shortTitle', async (request, response) => {
+    const blogs = await blogService.getBlog(request.params.shortTitle);
+    response.render('layout', { pageTitle: 'ArticleTitle', template: 'blogs', blogs });
+  });
 
   return router;
 };
