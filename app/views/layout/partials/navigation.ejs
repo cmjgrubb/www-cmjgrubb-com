@@ -1,0 +1,17 @@
+<div class="header">
+  <h1>CMJ</h1>
+</div>
+<nav class="navbar">
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">
+      Blogs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <% blogTitle.forEach(function (blog) { %>
+      <a href="/blogs/<%= blog.shortTitle %>"> <%= blog.articleTitle %></a>
+      <% }) %>
+    </div>
+  </div>
+</nav>
